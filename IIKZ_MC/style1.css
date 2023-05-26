@@ -1,0 +1,115 @@
+
+body{
+   
+    text-align: center;
+
+    min-height: 50vh;
+    background: #b1ad79;
+  }
+
+
+.grid {
+    display: grid;
+    grid-template-columns: 256px 256px 256px 256px;
+    grid-template-rows: 256px 256px 256px 256px;
+
+    /*
+    grid-template-columns: repeat(4, minmax(256px, 1fr));
+    grid-template-rows: repeat(4, minmax(256px, 1fr)); /* Create 4 equal rows */
+    
+    
+    justify-content: center;
+    /*grid-template-columns: 512px 512px 512px 512px;*/
+    
+    grid-gap: 10px; /* Define the gap between boxes */
+    
+    margin: 0 auto; /* Center the grid container horizontally */
+  }
+  
+  .cardDeck {
+    list-style: none; /* Remove default list styling */
+    padding: 0;
+    margin: 0;
+  }
+  
+  .card {
+  
+    justify-content: center;
+    align-items: center;
+  
+    background-color: #ebebeb; /* Set background color for the boxes */
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 17, 248, 0.2); /* Add a box shadow for a raised effect */
+  }
+
+  .front-view {
+
+    display: display;
+
+  }
+  
+  .view {
+
+  position: absolute;
+
+  }
+  
+  img{
+    height: 256px;
+    width: 256px;
+  }
+
+  .hide{
+    display: none;
+  }
+
+  .show{
+    display: block;
+  }
+
+  /*try out flip*/
+  
+  .card.flip .back-view{
+    transform: rotateY(0);
+  }
+  .card.flip .front-view{
+    transform: rotateY(180deg);
+  }
+
+  .restart-button {
+    display: inline-block;
+    padding: 30px 50px;
+    background-color: #0905e0;
+    color: #8785f0;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    width: 150px !important;
+    height: 100px !important;
+
+  }
+  
+  .restart-button:hover {
+    background-color: #06af0f;
+  }
+  
+  .restart-button:active {
+    background-color: #8e3e73;
+  }
+  
+  #timer-container {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  
+
+
+  /*
+  
+  .back-view {
+   
+  }
+  */

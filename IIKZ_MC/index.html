@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iikz Memory Card Game</title>
+    <link  href="style1.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <h3>Score:<span id = "result"></span></h3>
+
+    <div>
+        <ul class="cardDeck grid"> 
+            <li class="card matched">
+                <div class="view front-view">
+                    <img src="Iikz Images\resized\QUESTION mark.png" alt="icon">
+                </div>
+                <div class="view back-view hide">
+                    <img src="Iikz Images\resized\baby2.png" alt="card-image">           <!--1-->
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <img src="Iikz Images\resized\QUESTION mark.png" alt="icon">
+                </div>
+                <div class="view back-view hide">
+                    <img src="Iikz Images\resized\giraffe.png" alt="card-image">         <!--2-->
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <img src="Iikz Images\resized\QUESTION mark.png" alt="icon">
+                </div>
+                <div class="view back-view hide">
+                    <img src="Iikz Images\resized\GOOGLE.png" alt="card-image">          <!--3-->
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <img src="Iikz Images\resized\QUESTION mark.png" alt="icon">
+                </div>
+                <div class="view back-view hide">
+                    <img src="Iikz Images\resized\potato.png" alt="card-image">                  <!--4-->
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <img src="Iikz Images\resized\QUESTION mark.png" alt="icon">
+                </div>
+                <div class="view back-view hide">
+                    <img src="Iikz Images\resized\amazon.png" alt="card-image">                  <!--5-->
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <img src="Iikz Images\resized\QUESTION mark.png" alt="icon">
+                </div>
+                <div class="view back-view hide">
+                    <img src="Iikz Images\resized\BG.jpg" alt="card-image">                          <!--6-->
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <img src="Iikz Images\resized\QUESTION mark.png" alt="icon">
+                </div>
+                <div class="view back-view hide">
+                    <img src="Iikz Images\resized\FB.png" alt="card-image">                          <!--7-->
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <img src="Iikz Images\resized\QUESTION mark.png" alt="icon">
+                </div>
+                            <div class="view back-view hide">
+                    <img src="Iikz Images\resized\NETFLIX.png" alt="card-image">                        <!--8-->  
+                </div>
+            </li>
+
+            <li class="card">
+                <div class="view front-view">
+                    <img src="Iikz Images\resized\QUESTION mark.png" alt="icon">
+                </div>
+                <div class="view back-view hide">
+                    <img src="Iikz Images\resized\baby2.png" alt="card-image">                                           <!--1-->
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <img src="Iikz Images\resized\QUESTION mark.png" alt="icon">
+                </div>
+                <div class="view back-view hide">
+                    <img src="Iikz Images\resized\giraffe.png" alt="card-image">                           <!--2-->
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <img src="Iikz Images\resized\QUESTION mark.png" alt="icon">
+                </div>
+                <div class="view back-view hide">
+                    <img src="Iikz Images\resized\GOOGLE.png" alt="card-image">                           <!--3-->
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <img src="Iikz Images\resized\QUESTION mark.png" alt="icon">
+                </div>
+                <div class="view back-view hide">
+                    <img src="Iikz Images\resized\amazon.png" alt="card-image">                           <!--4-->
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <img src="Iikz Images\resized\QUESTION mark.png" alt="icon">
+                </div>
+                <div class="view back-view hide">
+                    <img src="Iikz Images\resized\BG.jpg" alt="card-image">                           <!--5-->
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <img src="Iikz Images\resized\QUESTION mark.png" alt="icon">
+                </div>
+                <div class="view back-view hide">
+                    <img src="Iikz Images\resized\FB.png" alt="card-image">                             <!--6-->  
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <img src="Iikz Images\resized\QUESTION mark.png" alt="icon">
+                </div>
+                <div class="view back-view hide">
+                    <img src="Iikz Images\resized\NETFLIX.png" alt="card-image">                           <!--7-->
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <img src="Iikz Images\resized\QUESTION mark.png" alt="icon">
+                </div>
+                <div class="view back-view hide">
+                    <img src="Iikz Images\resized\potato.png" alt="card-image">                               <!--8-->
+                </div>
+            </li>
+        </ul>
+       
+
+        <button id="restart-button">Restart</button>
+
+        <div id="timer-container">00:00</div>
+
+
+<!--
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+
+   -->
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+    <script src="./appFinal.js"></script>
+
+</body>
+
+</html>

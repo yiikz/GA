@@ -1,0 +1,56 @@
+/*
+How to:
+1. Work on the game logic first
+2. Set wining and loosing conditions
+3. Check your results often with console.log before moving forward
+4. Based on win() or loose(). Then you can do the DOM manipulations
+*/
+
+
+
+
+Game logic:
+
+1. Game starts with blank ? tiles 
+2. When CLICK, tile flips  
+3. When CLCIK 2nd time, 2nd tile flips 
+4. If match, tile stays open 
+5. Else, tiles close back 
+
+If X match
+flip-open > flip-open > check match > flip close 
+If match
+flip-open > flip-open > check match > stay open
+
+
+
+
+FUNCTIONS:
+
+1. flip-open ()
+2. timer ()
+3. clcik ()
+4. flip-close ()
+5. Win-cheer ()
+6. Game-Over () 
+7. shuffle-tiles ()
+8. check-match ()   //keep track 
+9. Restart ()
+10. Points ()
+
+Additional:
+
+7. vibrate () -  when match
+8. flip effect ()
+
+
+Time element: 
+1. Countdown timer starts upon receiving 1st click
+2. If time runs out, game ends 
+3. if all tiles are flipped before time runs out, player wins 
+
+
+
+Variables:
+
+1. activeTile == returnTile 
